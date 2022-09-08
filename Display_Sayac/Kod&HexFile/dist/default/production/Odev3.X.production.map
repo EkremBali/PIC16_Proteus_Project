@@ -1,0 +1,59 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sun Nov 17 11:40:26 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000002    program   0x000004
+                   .org_1       code   0x000004    program   0x0000cc
+.config_2007_BUILD/DEFAULT/PRODUCTION/ODEV3.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000069      
+                            0x002007    0x002007      
+            107 out of 8454 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    ARTIS   0x000016    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                  AYARLAR   0x000045    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                    BASLA   0x00005c    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+             BIRLIK_ARTIS   0x00001b    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                   DONGU1   0x000033    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                    DONUS   0x000028    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                  GECIKME   0x00002f    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+             KATOT_LOOKUP   0x00003a    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+          KONTROL_ONDALIK   0x00001d    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+            ONDALIK_ARTIS   0x000022    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                SIFIRLAMA   0x000025    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                  SUPURME   0x00005d    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+             _.org_1_0034   0x000034    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    ARTIS   0x000016    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+             BIRLIK_ARTIS   0x00001b    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+          KONTROL_ONDALIK   0x00001d    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+            ONDALIK_ARTIS   0x000022    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                SIFIRLAMA   0x000025    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                    DONUS   0x000028    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                  GECIKME   0x00002f    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                   DONGU1   0x000033    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+             _.org_1_0034   0x000034    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+             KATOT_LOOKUP   0x00003a    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                  AYARLAR   0x000045    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                    BASLA   0x00005c    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+                  SUPURME   0x00005d    program     static C:\Users\Ekrem\MPLABXProjects\Odev3.X\Odev3.asm
+
+

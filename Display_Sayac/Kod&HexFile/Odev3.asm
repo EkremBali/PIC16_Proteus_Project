@@ -1,0 +1,166 @@
+;KODLAMA SABLONU
+
+	list		p=16f877A	; hangi pic
+	#include	<p16f877A.inc>	; SFR register 'lar?n tan?mland??? kutuphane
+	
+	__CONFIG H'3F31'
+
+; WDT, ossilatör gibi register ayarlar?
+
+	
+;KULLANILACAK DEGISKENLER
+
+GECIKME1	EQU	0x20    ;GEC?KME 1. DONGU
+GECIKME2	EQU	0x21    ;GECIKME 2. DONGU
+GECIKME3	EQU	0x22    ;GECIKME 3.DONGU
+ONDALIK		EQU	0x23
+BIRLIK		EQU	0x24
+
+
+;***** Kesme durumunda kaydedilmesi gereken SFR ler icin kullanilacak yardimci degiskenler
+W_TEMP		EQU	0x7D		
+STATUS_TEMP	EQU	0x7E		
+PCLATH_TEMP	EQU	0x7F					
+
+
+;********************************************************************************************
+	ORG     0x000             	; Baslama vektoru
+
+	nop			  			  	; ICD ozelliginin aktif edilmesi icin gereken bekleme 
+  	goto    BASLA              	; baslama etiketine gir
+
+	
+;**********************************************************************************************
+	ORG     0x004             	; kesme vektoru
+
+	MOVWF	W_TEMP
+	MOVF	STATUS,0
+	MOVWF	STATUS_TEMP
+	MOVF	PCLATH,0
+	MOVWF	PCLATH_TEMP
+	
+	BANKSEL PIR1
+	BCF	PIR1,0
+	MOVLW	0xDB
+	MOVWF	TMR1L
+	MOVLW	0x0B
+	MOVWF	TMR1H
+	INCF	GECIKME3,1
+	MOVLW	D'2'
+	SUBWF	GECIKME3,W
+	BTFSS	STATUS,Z
+	GOTO	DONUS
+	CLRF	GECIKME3
+	
+ARTIS
+	MOVLW	D'9'
+	SUBWF	BIRLIK,W
+	BTFSS	STATUS,Z
+	GOTO	BIRLIK_ARTIS
+	GOTO	KONTROL_ONDALIK
+
+BIRLIK_ARTIS
+	INCF	BIRLIK,1
+	GOTO	DONUS
+	
+KONTROL_ONDALIK
+	MOVLW	D'5'
+	SUBWF	ONDALIK,W
+	BTFSS	STATUS,Z
+	GOTO	ONDALIK_ARTIS
+	GOTO	SIFIRLAMA
+
+ONDALIK_ARTIS
+	INCF	ONDALIK,1
+	CLRF	BIRLIK
+	GOTO	DONUS
+	
+SIFIRLAMA
+	CLRF	ONDALIK
+	CLRF	BIRLIK
+	GOTO	DONUS	
+
+	
+DONUS
+	MOVF	PCLATH_TEMP,0
+	MOVWF	PCLATH
+	MOVF	STATUS_TEMP,0
+	MOVWF	STATUS
+	SWAPF	W_TEMP,1
+	SWAPF	W_TEMP,0        	
+	RETFIE                  	; Kesme 'den don
+;***********************************************************************************************
+
+GECIKME				
+	MOVLW	0xE7
+	MOVWF	GECIKME1
+	MOVLW	0x04
+	MOVWF	GECIKME2
+DONGU1
+	DECFSZ	GECIKME1,1
+	GOTO	$+2
+	DECFSZ	GECIKME2, 1
+	GOTO	DONGU1
+
+	NOP
+	NOP	
+	RETURN
+	
+	
+KATOT_LOOKUP
+	ADDWF	PCL,1
+	RETLW	0x3F
+	RETLW	0x06
+	RETLW	0x5B
+	RETLW	0x4F
+	RETLW	0x66
+	RETLW	0x6D
+	RETLW	0x7C
+	RETLW	0x07
+	RETLW   0x7F
+	RETLW	0x6F
+	
+AYARLAR
+	MOVLW	B'00110001'
+	MOVWF	T1CON
+	BCF	PIR1,0
+	BANKSEL	TRISB
+	MOVLW	0x06
+	MOVWF	ADCON1
+	CLRF	TRISA
+	CLRF	TRISB
+	BSF	PIE1,0
+	BANKSEL	T1CON
+	CLRF	PORTB
+	CLRF	GECIKME3
+	MOVLW	0xDB
+	MOVWF	TMR1L
+	MOVLW	0x0B
+	MOVWF	TMR1H
+	MOVLW	B'11000000'
+	MOVWF	INTCON
+	CLRF	ONDALIK
+	CLRF	BIRLIK
+	RETURN
+	
+BASLA
+	CALL	AYARLAR
+	
+SUPURME
+	MOVLW	0x01
+	MOVWF	PORTA
+	MOVF	ONDALIK,0
+	CALL	KATOT_LOOKUP
+	MOVWF	PORTB
+	CALL	GECIKME
+	MOVLW	0x02
+	MOVWF	PORTA
+	MOVF	BIRLIK,0
+	CALL	KATOT_LOOKUP
+	MOVWF	PORTB
+	CALL	GECIKME
+	GOTO	SUPURME
+	
+	END                       ; Program sonu
+
+

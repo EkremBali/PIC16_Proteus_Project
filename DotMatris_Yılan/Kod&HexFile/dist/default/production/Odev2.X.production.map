@@ -1,0 +1,83 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Tue Nov 05 04:18:33 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000002    program   0x000004
+                   .org_1       code   0x000004    program   0x000158
+.config_2007_BUILD/DEFAULT/PRODUCTION/MATRIS3       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x0000af      
+                            0x002007    0x002007      
+            177 out of 8454 program addresses used, program memory utilization is 2%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    ASAGI   0x00007f    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                  AYARLAR   0x00001a    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                    BASLA   0x000045    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                    DONGU   0x000015    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                   DONGU1   0x00000a    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                    GECIK   0x000011    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                  GECIKME   0x000004    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                  KONTROL   0x00003c    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             LOOKUP_TABLE   0x000034    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                     SAGA   0x00008f    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                     SOLA   0x00009f    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                  SUPURME   0x000050    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                YEDEKLEME   0x000047    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                   YUKARI   0x00006e    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_000B   0x00000b    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_000D   0x00000d    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_0016   0x000016    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_006F   0x00006f    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_0079   0x000079    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_0080   0x000080    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_008A   0x00008a    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_0090   0x000090    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_009A   0x00009a    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_00A0   0x0000a0    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_00AA   0x0000aa    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  GECIKME   0x000004    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                   DONGU1   0x00000a    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_000B   0x00000b    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_000D   0x00000d    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                    GECIK   0x000011    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                    DONGU   0x000015    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_0016   0x000016    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                  AYARLAR   0x00001a    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             LOOKUP_TABLE   0x000034    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                  KONTROL   0x00003c    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                    BASLA   0x000045    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                YEDEKLEME   0x000047    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                  SUPURME   0x000050    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                   YUKARI   0x00006e    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_006F   0x00006f    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_0079   0x000079    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                    ASAGI   0x00007f    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_0080   0x000080    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_008A   0x00008a    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                     SAGA   0x00008f    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_0090   0x000090    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_009A   0x00009a    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+                     SOLA   0x00009f    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_00A0   0x0000a0    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+             _.org_1_00AA   0x0000aa    program     static C:\Users\Ekrem\MPLABXProjects\Odev2.X\Matris3.asm
+
+

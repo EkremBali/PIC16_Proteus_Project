@@ -1,0 +1,73 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Tue Nov 05 04:16:47 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000002    program   0x000004
+                   .org_1       code   0x000004    program   0x0000bc
+.config_2007_BUILD/DEFAULT/PRODUCTION/ODEV1V5       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000061      
+                            0x002007    0x002007      
+            99 out of 8454 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    ARTIS   0x00002c    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+           ARTIS_KONTROLU   0x00002e    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                   AZALMA   0x000045    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                  A_ARTIS   0x00003f    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                 A_AZALMA   0x00005e    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                    BASLA   0x000024    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                  B_ARTIS   0x00003d    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                 B_AZALMA   0x00005b    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                   DONGU1   0x00000a    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                  GECIKME   0x000004    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                  KONTROL   0x000027    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+          KONTROL_B_SIFIR   0x000057    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+            KONTROL_SIFIR   0x000047    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                   PORTA0   0x000037    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                   PORTA1   0x00003a    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+             PORTA_AYARLA   0x000011    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+             PORTB_AYARLA   0x00001c    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                SON_ARTIS   0x000042    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+             _.org_1_000B   0x00000b    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+             _.org_1_000D   0x00000d    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  GECIKME   0x000004    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                   DONGU1   0x00000a    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+             _.org_1_000B   0x00000b    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+             _.org_1_000D   0x00000d    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+             PORTA_AYARLA   0x000011    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+             PORTB_AYARLA   0x00001c    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                    BASLA   0x000024    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                  KONTROL   0x000027    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                    ARTIS   0x00002c    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+           ARTIS_KONTROLU   0x00002e    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                   PORTA0   0x000037    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                   PORTA1   0x00003a    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                  B_ARTIS   0x00003d    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                  A_ARTIS   0x00003f    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                SON_ARTIS   0x000042    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                   AZALMA   0x000045    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+            KONTROL_SIFIR   0x000047    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+          KONTROL_B_SIFIR   0x000057    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                 B_AZALMA   0x00005b    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+                 A_AZALMA   0x00005e    program     static C:\Users\Ekrem\MPLABXProjects\Odev1.X\Odev1v5.asm
+
+
