@@ -13,4 +13,4 @@
  
   Son projede ise bir Dot Matrix ve 4 adet buton kullanılmıştır. Bu dot matriste 3 nokta ile bir yılan temsil edilmektedir. Bu yılan 4 buton kullanılarak 4 yönde hareket ettirilmektedir. Yılan ters yöne dönememektedir. Örneğin yukarı gidiliyorsa aşağı dönme çalışmaz.
  
- ![DotMatrisYılan](https://github.com/EkremBali/PIC16_Proteus_Project/blob/main/images/Matris%20-%20Proteus%208%20Professional%20-%20Schematic%20Capture%208.09.2022%2015_03_59.png)
+ ![DotMatrisYılan](https://github.com/EkremBali/PIC16_Proteus_Project/blob/main/images/Matris%20-%20Proteus%208%20Professional%208.09.2022%2015_22_51.png)
